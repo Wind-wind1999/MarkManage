@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超市信息管理系统|精细搜索</title>
+    <link rel="stylesheet" type="text/css" href="../css/comSearch.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/currency.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/comBox.css"/>
+    <script src="../javaScript/ul.js"></script>
+</head>
+<body>
+    <div id="top">
+        <a href="index.html"><strong>超市信息管理系统</strong></a>
+    </div>
+    <div id="box">
+        <div id="topName"><strong>精细搜索</strong></div>
+        <div id="operation">
+            <div id="condition">
+                <div id="nameSearchBox">
+                    <span>商品名搜：</span>
+                    <input type="text" id="idSearch"/>
+                </div>
+                <div id="comTypeBox">
+                    <span>商品类型：</span><input type="text" id="comType"/>
+                        <button type="button" id="comTypeBtn" onclick="ulSelect('comType','comTypeBtn','ulType','comEmbed')">
+                            <embed type="image/svg+xml" id="comEmbed" src="../img/right hand.svg" style="transform: none;"/>
+                        </button>
+                        <ul id="ulType" style="display: none;">
+                            <li>食品类</li>
+                            <li>清洁类</li>
+                            <li>床上用品</li>
+                            <li>服饰类</li>
+                            <li>电器类</li>
+                        </ul>
+                </div>
+                <div id="sectionBox">
+                    <div id="sectionLeft">
+                        <div>
+                            <span>商品数区间：</span>
+                            <input type="text" id="comLowNum"/>最小数
+                            <strong>——</strong> 
+                            <input type="text" id="comHighNum"/>最大数
+                        </div>
+                        <div>
+                            <span>商品价格区间：</span>
+                            <input type="text" id="comLowPrice"/>最低价
+                            <strong>——</strong> 
+                            <input type="text" id="comHighPrice"/>最高价
+                        </div>     
+                    </div>
+                    <div id="sectionRight">
+                        <div>
+                            <span>商品销量区间：</span>
+                            <input type="text" id="comLowCount"/>最低
+                            <strong>——</strong>
+                            <input type="text" id="comHighCount"/>最高
+                        </div>
+                        <div>
+                            <span>商品保质期区间：</span>
+                            <input type="text" id="comLowDay"/>最短
+                            <strong>——</strong> 
+                            <input type="text" id="comHighDay"/>最长
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="comDescrip">
+                <p>商品详单</p>
+                <table id="descrip">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>  
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

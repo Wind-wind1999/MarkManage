@@ -1,0 +1,249 @@
+#outlandP{
+    width: 7.5%;
+    height: 100px;
+    margin: 60px 0 0 2.5%;
+    float: left;
+    background-color: transparent;
+}
+#outland,#person{
+    width: 90%;
+    height: 50%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;  
+}
+#outland{
+    background-color: #e0e5df;
+}
+#person{
+    display: none;
+    background-color: #c1cbd7;
+}
+#outland:hover,#person:hover{
+    width:100%;
+    transform: rotateX(-10%);
+}
+
+#box{
+    width: 80%;
+    height: 500px;
+    background-color: transparent;
+    margin: 0 auto;
+    float: left;
+}
+#boxTop{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+#broadcast{
+    width:70%;
+    height: 100%;
+    float: left;
+    background-color: #b5c4b1;
+    border-radius: 0 0 0 15px;
+}
+#broIcon{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: 10px;
+    background-color: #b5c4b1;
+}
+#broMessage{
+    width: 90%;
+    height:90% ;
+    border: 0;
+    font-size: 16px;
+    background-color: #b5c4b1;
+    float: left;
+}
+#searchBox{
+    width: 30%;
+    height: 30px;
+    float: left;
+    background-color: #c1cbd7;
+    border-radius: 0 0 15px 0;
+}
+#search{
+    width: 80%;
+    height: 90%;
+    border: 0;
+    font-size: 16px;
+    background-color: #c1cbd7;
+    margin-left: 15px;
+    float: left;
+}
+
+
+#function{
+    width: 100%;
+    height: 550px;
+    background-color: #7b8b6f;
+    box-shadow: 8px 5px 8px #242424;
+}
+#funBox,#shadow{
+    position: relative;
+    width: 80%;
+    height: 100px;
+    margin: 0 10% 0 10%;
+    background: transparent;
+    border-radius: 0 0 20px 20px;   
+}
+#funBox{
+    float: left;
+    z-index: 90;
+}
+#shadow{
+    border-top: 0;
+    left: 0px;
+    box-shadow: 13px 0px 5px -5px #242424 inset;
+    z-index: 100;
+    pointer-events: none;
+}
+#comIn,#comDel,#comSale,#comSearch{
+    display: block;
+    height: 80px;
+    width: 25%;
+    float: left;
+    padding:10px 0 10px 0;
+    text-align: left;
+    font-size: 24px;
+    color: black;
+}
+#comIn,#comSale{
+    background-color:#c1cbd7;
+}
+#comDel,#comSearch{
+    background-color: #e0e5df;
+}
+#comIn{
+    border-radius: 0 0 0 20px;
+}
+#comSearch{
+    border-radius: 0 0 20px 0;
+}
+#comIn:hover,#comDel:hover,#comSale:hover,#comSearch:hover{
+    height: 110px;
+    transform: translateY(-30px);
+}
+#funBox span{
+    display: block;
+    margin: 40px 0 0 20px;
+    float: left;
+}
+#funBox embed{
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+#comDescrip{
+    width: 90%;
+    background-color: #d8caaf;
+    height: 350px;
+    margin: 50px 5% 0 5%;
+    box-shadow: 8px 3px 5px #242424 inset;
+}
+#comDescrip strong{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#descrip{
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid #242424;
+    border-collapse: collapse;
+}
+#descrip td{
+    border: 1px solid #242424;
+}
+#descrip tr{
+    height: 36px;
+}
+#descrip tr:nth-child(2n){
+    background-color: #c5b8a5;
+}
+
+#pageBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: transparent;
+}
+#previousPage,#nextPage,#lastPage,#jump,#firstPage{
+    display:flex;
+    float: left;
+    margin:0 10px 0 10px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px #242424 inset;
+}
+#lastPage{
+    margin:0 10px 0 0;
+}
+#lastPage,#jump,#firstPage{
+    padding: 0 10px 0 10px;
+}
+#previousPage embed,#nextPage embed,#lastPage embed,#jump embed,#firstPage embed{
+    pointer-events: none;
+}
+#previousPage embed{  
+    transform: rotateY(180deg);
+}
+#previousPage:hover,#nextPage:hover,#lastPage:hover,#jump:hover,#firstPage:hover{
+    box-shadow: 3px 2px 3px #242424 inset;
+}
+#pageJump{
+    width: 30px;
+    height: 18px;
+    border:0;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: #d8caaf;
+    box-shadow: 3px 1px 3px #242424 inset;
+}
+
+#message{
+    width: 7.5%;
+    height: 200px;
+    margin: 60px 2.5% 0 0;
+    float: left;
+    background-color: #c9d3c3;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 6px 0 3px -3px #656565 inset;
+}
+#message:hover{
+    width: 8.5%;
+    transform: scaleX(1%);
+    margin:60px 1.5% 0 0;
+    
+}
+#message_picture{
+    width:50px;
+    height: 50px;
+    border: 0;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#copyright{
+    position: fixed;
+    bottom:0px;
+    width:100%;
+    height:25px;
+    font-size: 12px;
+    color: rgb(218, 218, 218);
+    text-align:center;
+    background:#656565;
+    z-index:2;
+    overflow:hidden;
+}

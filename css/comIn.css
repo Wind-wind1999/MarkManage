@@ -1,0 +1,111 @@
+#circleBox{
+    height: auto;
+    float: left;
+    margin: 0 0 0 15%;
+    background-color: transparent;
+
+}
+#circleBox div{
+    position: relative;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-color: #d8caaf;
+    box-shadow: 2px 1px 5px #242424 inset;
+    border-radius: 20px;
+    margin:0 0 25px 0;
+}
+
+#operation{
+    width: 60%;
+    margin: 25px 20% 0 20%;
+}
+#operation div{
+    width: 100%;
+    height: 35px;
+    margin: 0 0 25px 0;
+    background-color: #d8caaf;
+    box-shadow: 2px 1px 5px #242424 inset;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;   
+}
+
+#operation div span{
+    display: block;
+    margin-left: 30px;
+}
+#comId,#comName,#comType,#comPrice,#comNum,#comCount,#comDay,#comHisNum{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #525252;
+    height: 20px;
+}
+#comType,#comHisNum{
+    text-align: center;
+    width: 80px;
+}
+#comEmbed{
+    pointer-events: none;
+    background-color: transparent;
+}
+#comTypeBtn{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e5df;
+    margin: 0 10px 0 10px;
+    box-shadow: 2px 1px 5px #242424;
+    border-radius: 10px;   
+}
+#comTypeBtn:hover{
+    box-shadow: 3px 2px 5px #242424;
+}
+#ulType{
+    display: block;
+    list-style: none;
+    width: 100px;
+    padding:10px 0 10px 0;
+    text-align: center;
+    background-color:#e0e5df ;
+    border-radius: 15px;
+    box-shadow: 2px 1px 3px #242424;
+    z-index: 100;
+}
+#operation ul li{
+    cursor: pointer;
+    line-height: 25px;
+}
+#operation ul li:hover{
+    background-color: #bec2bd;
+}
+
+
+#btnBox{
+    width: 60%;
+    height: 50px;
+    margin: 25px 20% 0 20%;
+    background-color: transparent;
+}
+#reset,#OK{
+    width: 25%;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 2px 1px 5px #242424 inset;
+}
+#reset{
+    float: left;
+    margin: 0 25% 0 12.5%;
+}
+#OK{
+    margin: 0 12.5% 0 0;
+}
+#reset:hover,#OK:hover{
+    box-shadow: 3px 2px 5px #242424 inset;
+}

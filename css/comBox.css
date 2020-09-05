@@ -1,0 +1,19 @@
+#box{
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #e0e5df;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 10px 5px 10px #242424;
+    text-align: center;
+}
+#topName{
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    background-color:#c1cbd7 ;
+    font-size: 30px;
+    color: #fffaf4;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 10px 5px 10px #242424;
+}

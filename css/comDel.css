@@ -1,0 +1,181 @@
+#operation{
+    width: 80%;
+    margin: 25px 10% 0 10%;
+}
+
+#comIdSearch{
+    width: 100%;
+    height: 35px;
+    margin: 0 0 20px 0;
+    background-color: #d8caaf;
+    box-shadow: 2px 1px 5px #242424 inset;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;  
+}
+#comIdSearch span{
+    padding-left: 20px;
+}
+#idSearch{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #525252;
+    height: 20px;
+}
+#idSbtn,#idDelbtn{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e5df;
+    margin: 0 10px 0 10px;
+    box-shadow: 2px 1px 5px #242424;
+    border-radius: 10px; 
+    cursor: pointer;  
+}
+#idDelbtn{
+    display: none;
+    margin: 0 10px 0 0;
+}
+#idSbtn:hover,#idDelbtn:hover{
+    box-shadow: 3px 2px 5px #242424;
+}
+#comIdSearch embed,#idDelbtn embed{
+    pointer-events: none;
+}
+#comSearch_tip{
+    margin-left: 20px;
+}
+
+#comChange{
+    position: relative;
+    width: 100%;
+    height: 270px;
+    margin: 0 0 20px 0;
+    background-color: #d8caaf;
+    box-shadow: 2px 1px 5px #242424 inset;
+    border-radius: 20px;
+    text-align: left;
+    overflow: hidden;
+}
+#comChange_box{
+    float: left;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
+#del_btn_box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 5%;
+    height: 30%;
+    top:35%;
+    left: 95%;
+    border:0;
+    font-size: 20px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 3px 6px 3px -3px #242424;
+    background-color: #e0e5df;
+}
+#del_btn_box:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 3px -1px #242424;
+}
+#update_tip{
+    margin: 0 0 0 50px;
+    color: green;
+}
+#comChange_box div{
+    width: 70%;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 30%;
+}
+#comId,#comName,#comType,#comPrice,#comNum,#comCount,#comDay{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #525252;
+    height: 20px;
+}
+#comTypeBox{
+    width: 100%;
+}
+#comType{
+    text-align: center;
+    float: center;
+    width: 80px;
+}
+#comEmbed{
+    pointer-events: none;
+    background-color: transparent;
+}
+#comTypeBtn{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e5df;
+    margin: 0 10px 0 10px;
+    box-shadow: 2px 1px 5px #242424;
+    border-radius: 10px;   
+}
+#comTypeBtn:hover{
+    box-shadow: 3px 2px 5px #242424;
+}
+#ulType{
+    display: block;
+    list-style: none;
+    width: 100px;
+    padding:10px 0 10px 0;
+    text-align: center;
+    background-color:#e0e5df ;
+    border-radius: 15px;
+    box-shadow: 2px 1px 3px #242424;
+    z-index: 100;
+}
+#operation ul li{
+    cursor: pointer;
+    line-height: 25px;
+}
+#operation ul li:hover{
+    background-color: #bec2bd;
+}
+
+#comDes{
+    width: 100%;
+    height: 120px;
+    margin: 0 0 20px 0;
+    background-color: #d8caaf;
+    box-shadow: 2px 1px 5px #242424 inset;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+#comDes_table{
+    width: 90%;
+    border: 2px solid #242424;
+    border-collapse: collapse;
+}
+#comDes_table tr{
+    height: 36px;
+}
+#comDes_table tr:nth-child(2n){
+    background-color: #c5b8a5;
+}
+#comDes_table td{
+    border: 1px solid #242424;
+}
+
+

@@ -1,0 +1,70 @@
+#loginBox{
+    position: relative;
+    height: 30%;
+    width: 40%;
+    margin:10% 30% 0 30%;
+    background-color: #d8caaf;
+    box-shadow: 5px 3px 5px #242424 inset;
+    border-radius: 15px;
+    padding-top: 30px;
+}
+#IDTitle,#pwTitle,#idBox,#pwBox{
+    float: left;
+}
+#IDTitle,#pwTitle{
+    width: 20%;
+    text-align: right;
+    font-size: 20px;
+}
+#IDTitle{
+    padding-top:20px;
+}
+
+#idBox,#pwBox{
+    width: 80%;
+    text-align: left;
+}
+#id,#password{
+    width: 80%;
+    height: 25px;
+    font-size: 20px;
+    border:0;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+#id{
+    margin-top:20px;
+}
+#idBox span,#pwBox span{
+    height: 20px;
+    font-size: 12px;
+    color: red;
+    display: block;
+    padding-left:20px;
+}
+#pwTitle{
+    clear: left;
+}
+
+#btnBox{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 50px;
+    margin:0 35% 0 35%;
+    bottom: 0px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 8px 0 3px -3px #242424;
+    background-color: #e0e5df;
+}
+#loginBtn{
+    border:0;
+    background: transparent;
+    font-size: 24px;
+}
+#btnBox:hover{
+    box-shadow: 5px 0 3px -3px #242424;
+}

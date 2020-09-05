@@ -1,0 +1,115 @@
+#operation{
+    width: 80%;
+    height: 80%;
+    margin: 25px 10% 0 10%;
+}
+
+#nameSearchBox,#comTypeBox{
+    width: 100%;
+    height: 30px;
+    margin: 0 0 10px 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+#idSearch,#comType{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #525252;
+    height: 20px;
+    float: left;
+}
+
+#comType{
+    text-align: center;
+    float: center;
+    width: 80px;
+}
+#comEmbed{
+    pointer-events: none;
+    background-color: transparent;
+}
+#comTypeBtn{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #c1cbd7;
+    margin: 0 10px 0 10px;
+    box-shadow: 2px 1px 5px #242424;
+    border-radius: 10px;   
+}
+#comTypeBtn:hover{
+    box-shadow: 3px 2px 5px #242424;
+}
+#ulType{
+    display: block;
+    list-style: none;
+    width: 100px;
+    padding:10px 0 10px 0;
+    text-align: center;
+    background-color:#c1cbd7 ;
+    border-radius: 15px;
+    box-shadow: 2px 1px 3px #242424;
+    z-index: 100;
+}
+#operation ul li{
+    cursor: pointer;
+    line-height: 25px;
+}
+#operation ul li:hover{
+    background-color: #959da7;
+}
+
+#sectionBox input[type=text]{
+    background-color: transparent;
+    border: 1px solid #545454;
+    border-radius: 5px;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+}
+#condition span{
+    margin-left: 20px;
+}
+#sectionBox{
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+#sectionBox div div{
+    margin-top: 10px;
+    height: 20px;
+}
+#sectionLeft{
+    float: left;
+}
+#sectionRight{
+    margin: 0 0 0 50%;
+}
+#sectionRight > div:first-of-type{
+    padding-top: 10px;
+}
+
+#comDescrip{
+    width: 100%;
+    background-color: #d8caaf;
+    height: 60%;
+    margin: 30px 0 0 0;
+    box-shadow: 8px 3px 5px #242424 inset;
+}
+#descrip{
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid #242424;
+    border-collapse: collapse;
+    height: 80%;
+}
+#descrip td{
+    border: 1px solid #242424;
+}
+#descrip tr:nth-child(2n){
+    background-color: #c5b8a5;
+}
