@@ -95,21 +95,58 @@
 
 #comDescrip{
     width: 100%;
+    height: 250px;
+    margin: 20px 0 30px 0;
     background-color: #d8caaf;
-    height: 60%;
-    margin: 30px 0 0 0;
-    box-shadow: 8px 3px 5px #242424 inset;
+    box-shadow: 2px 1px 5px #242424 inset;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;  
 }
-#descrip{
+#comDes_table{
     width: 90%;
-    margin: 0 auto;
+    margin-top: 20px;
     border: 2px solid #242424;
     border-collapse: collapse;
-    height: 80%;
 }
-#descrip td{
+#comDes_table tr{
+    height: 36px;
+}
+#comDes_table tr:nth-child(2n){
+    background-color: #c5b8a5;
+}
+#comDes_table td{
     border: 1px solid #242424;
 }
-#descrip tr:nth-child(2n){
-    background-color: #c5b8a5;
+
+#btn_Box{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+#comSearch_search,#comSearch_reset{
+    width: 20%;
+    height: 90%;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 1px 5px #242424 inset;
+    border:none;
+    font-size: 24px;
+    text-align: center;
+}
+#comSearch_tip{
+    display: flex;
+    float: left;
+    width: 60%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    color: green;
+}
+#comSearch_reset{
+    float: left;
+}
+#comSearch_search:hover,#comSearch_reset:hover{
+    box-shadow: 3px 2px 5px #242424 inset;
 }

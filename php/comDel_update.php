@@ -1,15 +1,8 @@
 <?php
-    $hostname="localhost";
-	$database="markmana";
-	$username="root";
-	$password="111111";
-    global $webconn;
-    $webconn=mysqli_connect($hostname,$username,$password);
-	if(!$webconn){
-		die('Could not connect:'.mysqli_error());
-	}
+    require_once('webconn.php');//引用连接数据库文件
     mysqli_select_db($webconn,$database);
-
+    global $webconn=$webconn;
+    
     global $s_id;
     $s_id=(int)$_POST['s_id'];
     $id=(int)$_POST['id'];

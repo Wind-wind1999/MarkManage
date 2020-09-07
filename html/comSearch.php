@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="../css/comSearch.css"/>
     <link rel="stylesheet" type="text/css" href="../css/currency.css"/>
     <link rel="stylesheet" type="text/css" href="../css/comBox.css"/>
-    <script src="../javaScript/ul.js"></script>
+    <script src="../lib/jquery-3.5.1.min.js"></script>
+    <script src="../javaScript/ul.js"></script>  
+    <script src="../javaScript/comSearch.js"></script>
 </head>
 <body>
     <div id="top">
@@ -18,8 +20,9 @@
         <div id="operation">
             <div id="condition">
                 <div id="nameSearchBox">
-                    <span>商品名搜：</span>
+                    <span>商品名：</span>
                     <input type="text" id="idSearch"/>
+                    <span>(可直接点击搜索查看所有商品)</span>
                 </div>
                 <div id="comTypeBox">
                     <span>商品类型：</span><input type="text" id="comType"/>
@@ -66,65 +69,22 @@
                 </div>
             </div>
             <div id="comDescrip">
-                <p>商品详单</p>
-                <table id="descrip">
+                <table id="comDes_table">
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th>ID</th>
+                        <th>商品名</th>
+                        <th>商品类型</th>
+                        <th>价格(元)</th>
+                        <th>库存</th>
+                        <th>销量</th>
+                        <th>保质期(天)</th>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr> 
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr> 
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>  
                 </table>
+            </div>
+            <div id="btn_Box">
+                <input type="button" value="重置" id="comSearch_reset"/>
+                <span id="comSearch_tip">搜索成功！</span>
+                <input type="button" value="搜索" id="comSearch_search"/>
             </div>
         </div>
     </div>

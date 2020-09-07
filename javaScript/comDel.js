@@ -12,7 +12,7 @@ $(document).ready(function(){
                 //alert(data);
                 if(data=="error"){
                     $("#comSearch_tip").text("查询失败！");
-                    $("#idDelbtn").css("display","none");
+                    $("#idDelbtn").hide();
                 }else{
                     var data=jQuery.parseJSON(data);
                     $("#id").text(data.id);
@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     $("#idSearch").click(function(){
         $("#comSearch_tip").text("");
-        $("#idDelbtn").css("display","none");
+        $("#idDelbtn").hide();
     });
 
     $("#idDelbtn").click(function(){
@@ -59,7 +59,7 @@ $(document).ready(function(){
                 }
                 else{
                     $("#comSearch_tip").text("删除失败");
-                    $("#idDelbtn").css("display","none");
+                    $("#idDelbtn").hide();
                 }
             },
             error:function(){
