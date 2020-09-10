@@ -13,10 +13,11 @@
 </head>
 <body>
     <div id="top">
-        <a href="index.html"><strong>超市信息管理系统</strong></a>
+        <a href="index.php"><strong>超市信息管理系统</strong></a>
     </div>
     <div id="box">
         <div id="topName"><strong>精细搜索</strong></div>
+        <form>
         <div id="operation">
             <div id="condition">
                 <div id="nameSearchBox">
@@ -33,8 +34,10 @@
                             <li>食品类</li>
                             <li>清洁类</li>
                             <li>床上用品</li>
-                            <li>服饰类</li>
+                            <li>护肤类</li>
                             <li>电器类</li>
+                            <li>容器类</li>
+                            <li>刀具类</li>
                         </ul>
                 </div>
                 <div id="sectionBox">
@@ -70,23 +73,32 @@
             </div>
             <div id="comDescrip">
                 <table id="comDes_table">
-                    <tr>
-                        <th>ID</th>
-                        <th>商品名</th>
-                        <th>商品类型</th>
-                        <th>价格(元)</th>
-                        <th>库存</th>
-                        <th>销量</th>
-                        <th>保质期(天)</th>
-                    </tr>
+                    
                 </table>
             </div>
+            <div id="pageBox">
+                <a id="firstPage">首页</a>
+                <a id="previousPage">
+                    <embed src="../img/right hand.svg"/>
+                </a>
+                <b id="pageNow"></b>
+                <b>/</b>
+                <b id="amount"></b>
+                <a id="nextPage">
+                    <embed src="../img/right hand.svg"/>
+                </a>
+                <a id="lastPage">末页</a>
+                <input type="text" id="pageJump"/>页
+                <a id="jump">跳转</a>
+                 
+            </div>
             <div id="btn_Box">
-                <input type="button" value="重置" id="comSearch_reset"/>
-                <span id="comSearch_tip">搜索成功！</span>
+                <input type="reset" value="重置" id="comSearch_reset"/>
+                <span id="comSearch_tip"></span>
                 <input type="button" value="搜索" id="comSearch_search"/>
             </div>
         </div>
+        </form>
     </div>
 </body>
 </html>

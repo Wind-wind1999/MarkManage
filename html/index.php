@@ -7,6 +7,8 @@
     <title>超市信息管理系统</title>
     <link rel="stylesheet" type="text/css" href="../css/currency.css"/>
     <link rel="styleSheet" type="text/css" href="../css/index.css"/>
+    <script src="../lib/jquery-3.5.1.min.js"></script>
+    <script src="../javaScript/index.js"></script>
     <script src="../javaScript/index_pageJump.js"></script>
 </head>
 <body>
@@ -15,7 +17,7 @@
     </div>
     <div id="outlandP">
         <div id="outland"><a href="./index_unland.php">退出登录</a></div>
-        <div id="person">人员管理</div>
+        <div id="person"><a href="person.php">人员管理</a></div>
     </div>
     <div id="box">
         <div id="boxTop">
@@ -27,7 +29,7 @@
             </div>
             <div id="searchBox">
                 <input type="text" name="" id="search"/>
-                <a><embed src="../img/search.svg" type="image/svg+xml"></a>
+                <a id="index_search_btn"><embed src="../img/search.svg" type="image/svg+xml"></a>
             </div>
         </div>
         <div id="function">
@@ -42,51 +44,26 @@
                     <span>精细搜索</span></a>
             </div>
             <div id="shadow"></div>
+            <div id="get_page_tip"></div>
             <div id="comDescrip">
-                <?php require_once("../php/getShop.php");?>
                 <strong>商品详单</strong>
-                <table id="descrip">
-                    <tr>
-                        <th>ID</th>
-                        <th>商品名</th>
-                        <th>商品类型</th>
-                        <th>价格(元)</th>
-                        <th>库存</th>
-                        <th>销量</th>
-                        <th>保质期(天)</th>
-                    </tr>
-                    <?php do{ ?>
-                    <tr>
-                        <td><?php echo($row_rsdb['shopId']); ?></td>
-                        <td><?php echo($row_rsdb['shopName']); ?></td>
-                        <td><?php echo($row_rsdb['shopType']); ?></td>
-                        <td><?php echo($row_rsdb['shopPrice']); ?></td>
-                        <td><?php echo($row_rsdb['shopNum']); ?></td>
-                        <td><?php echo($row_rsdb['shopCount']); ?></td>
-                        <td><?php echo($row_rsdb['shopDay']); ?></td>
-                    </tr>
-                    <?php }while($row_rsdb = mysqli_fetch_assoc($limit_rsdb));?>
+                <table id="descrip">                   
                 </table>
             </div>
             <div id="pageBox">
-                <?php if($amount==1){?>
-                <strong>1</strong>
-                <?php }if($amount>1){?>
-                <a id="firstPage" href="" onclick="firstPage()">首页</a>
-                <a id="previousPage" href="" onclick="previousPage()">
+                <a id="firstPage">首页</a>
+                <a id="previousPage">
                     <embed src="../img/right hand.svg"/>
                 </a>
-                <strong id="pagenow"><?php echo($page);?></strong>
-                <strong>/</strong>
-                <strong id="amount"><?php echo($amount);?></strong>
-                <a id="nextPage" href="" onclick="nextPage()">
+                <b id="pageNow"></b>
+                <b>/</b>
+                <b id="amount"></b>
+                <a id="nextPage">
                     <embed src="../img/right hand.svg"/>
                 </a>
-                <a id="lastPage" href="" onclick="lastPage()">末页</a>
+                <a id="lastPage">末页</a>
                 <input type="text" id="pageJump"/>页
-                <a id="jump" href="" onclick="pageJump()">跳转</a>
-                <?php }?> 
-                 
+                <a id="jump">跳转</a>              
             </div>
         </div>
     </div>

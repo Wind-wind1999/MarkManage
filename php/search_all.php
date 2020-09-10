@@ -8,7 +8,7 @@
   
     $data=mysqli_fetch_all($result,MYSQLI_ASSOC);
     $data=json_encode($data,JSON_UNESCAPED_UNICODE);
-    echo "$data";
+    echo $data;
 
     mysqli_close($webconn);
 

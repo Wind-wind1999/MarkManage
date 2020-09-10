@@ -96,7 +96,7 @@
 #comDescrip{
     width: 100%;
     height: 250px;
-    margin: 20px 0 30px 0;
+    margin: 20px 0 0 0;
     background-color: #d8caaf;
     box-shadow: 2px 1px 5px #242424 inset;
     border-radius: 10px;
@@ -120,10 +120,50 @@
     border: 1px solid #242424;
 }
 
+#pageBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: transparent;
+}
+#previousPage,#nextPage,#lastPage,#jump,#firstPage{
+    display:flex;
+    float: left;
+    margin:0 10px 0 10px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px #242424 inset;
+}
+#lastPage{
+    margin:0 10px 0 0;
+}
+#lastPage,#jump,#firstPage{
+    padding: 0 10px 0 10px;
+}
+#previousPage embed,#nextPage embed,#lastPage embed,#jump embed,#firstPage embed{
+    pointer-events: none;
+}
+#previousPage embed{  
+    transform: rotateY(180deg);
+}
+#previousPage:hover,#nextPage:hover,#lastPage:hover,#jump:hover,#firstPage:hover{
+    box-shadow: 3px 2px 3px #242424 inset;
+}
+#pageJump{
+    width: 30px;
+    height: 18px;
+    border:0;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: #d8caaf;
+    box-shadow: 3px 1px 3px #242424 inset;
+}
+
 #btn_Box{
     width: 100%;
-    height: 50px;
-    margin-top: 20px;
+    height: 40px;
+    margin-top: 10px;
 }
 #comSearch_search,#comSearch_reset{
     width: 20%;

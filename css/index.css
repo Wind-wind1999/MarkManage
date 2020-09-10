@@ -68,6 +68,9 @@
     background-color: #c1cbd7;
     border-radius: 0 0 15px 0;
 }
+#searchBox embed{
+    pointer-events: none;
+}
 #search{
     width: 80%;
     height: 90%;
@@ -76,6 +79,13 @@
     background-color: #c1cbd7;
     margin-left: 15px;
     float: left;
+}
+#index_search_btn{
+    display: flex;
+    width:30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -141,11 +151,21 @@
     margin-left: 10px;
 }
 
+#get_page_tip{
+    display: flex;
+    width: 90%;
+    height: 50px;
+    margin:0 5% 0 5%;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 66, 0);
+}
+
 #comDescrip{
     width: 90%;
     background-color: #d8caaf;
     height: 350px;
-    margin: 50px 5% 0 5%;
+    margin: 0 5% 0 5%;
     box-shadow: 8px 3px 5px #242424 inset;
 }
 #comDescrip strong{

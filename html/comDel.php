@@ -65,8 +65,10 @@
                                 <li>食品类</li>
                                 <li>清洁类</li>
                                 <li>床上用品</li>
-                                <li>服饰类</li>
+                                <li>护肤类</li>
                                 <li>电器类</li>
+                                <li>容器类</li>
+                                <li>刀具类</li>
                             </ul>
                         </div>
                         <div>
