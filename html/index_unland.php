@@ -16,11 +16,13 @@
     </div>
     <div id="box">
         <div id="boxTop">
-            <div id="broadcast">
+        <div id="broadcast">
                 <div id="broIcon">
                     <embed src="../img/broadcast.svg" type="image/svg+xml">
                 </div>
-                <input type="text" name="" id="broMessage" readonly value="公告"/>
+                <div id="broBox">
+                    <div id="broMessage"></div>
+                </div>
             </div>
             <div id="searchBox">
                 <input type="text" name="" id="search"/>

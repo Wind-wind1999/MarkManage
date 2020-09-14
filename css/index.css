@@ -47,19 +47,38 @@
     border-radius: 0 0 0 15px;
 }
 #broIcon{
+    width: 8%;
+    height: 30px;
+    float: left;
+    background-color: #b5c4b1;
+}
+#broIcon embed{
     width: 30px;
     height: 30px;
     float: left;
     margin-left: 10px;
-    background-color: #b5c4b1;
+    background-color: transparent;
+}
+#broBox{
+    width:87%;
+    height: 30px;
+    margin: 0 5% 0 0;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
 }
 #broMessage{
-    width: 90%;
-    height:90% ;
+    height:30px;
+    left:100%;
     border: 0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
     font-size: 16px;
-    background-color: #b5c4b1;
-    float: left;
+    background-color: transparent;
+    position: relative;
+    white-space: nowrap;
 }
 #searchBox{
     width: 30%;

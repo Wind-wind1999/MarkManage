@@ -25,7 +25,9 @@
                 <div id="broIcon">
                     <embed src="../img/broadcast.svg" type="image/svg+xml">
                 </div>
-                <input type="text" name="" id="broMessage" readonly value="公告"/>
+                <div id="broBox">
+                    <div id="broMessage">如果有相关通知，将会在此处显示。点击可查看通知详情</div>
+                </div>
             </div>
             <div id="searchBox">
                 <input type="text" name="" id="search"/>

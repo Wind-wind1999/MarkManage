@@ -1,4 +1,23 @@
 $(document).ready(function(){
+
+    function broadcast(){
+        function slide(){
+            var width=$("#broMessage").css("width");
+            $("#broMessage").animate({left:'-'+width},15000);
+            setTimeout(function(){
+                $("#broMessage").css("left","100%");
+            },15000);
+        }
+        slide();
+        setInterval(function(){slide();},16000);
+    }
+
+    broadcast();//公告
+
+    $("#broBox").click(function(){
+        alert("公告详情："+$("#broMessage").text());
+    });
+
     $("#pageBox").hide();
 
     //获取翻页按钮的id
